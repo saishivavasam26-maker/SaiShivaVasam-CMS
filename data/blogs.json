@@ -1,0 +1,27 @@
+
+[
+{
+"id": "1715942400001",
+"title": "Starting My Full Stack Development Internship",
+"content": "I started my Full Stack Development internship on May 16, 2026. During the first week, my main focus was understanding how web applications are structured and selecting a suitable project. I chose to build a Content Management System (CMS) because it would help me learn both frontend and backend concepts in a practical way. I spent time setting up Visual Studio Code, organizing the project structure, and understanding how different components of a web application work together. Initially, I faced confusion regarding routing, backend workflow, and project organization, but this week helped me build a strong foundation for the upcoming development work.",
+"date": "May 16, 2026"
+},
+{
+"id": "1716633600002",
+"title": "Building My First Working CMS Features",
+"content": "During the second week, I moved from theory into actual development. I started building the CMS using Node.js, Express.js, and EJS templates. I created multiple routes, designed pages, implemented blog listing functionality, and learned how dynamic rendering works. I also added basic Create and Delete operations without using a database. This week involved a lot of debugging because I frequently encountered routing errors, rendering issues, and project structure mistakes. By solving these problems one by one, I gained confidence in backend development and understood how a real-world project is organized.",
+"date": "May 24, 2026"
+},
+{
+"id": "1717248000003",
+"title": "Learning Backend Concepts and Improving the Project",
+"content": "The third week was focused on both learning and project improvement. Alongside my CMS project, I studied Java 8 features and JDBC fundamentals to strengthen my backend knowledge. In the CMS project, I improved the UI, organized the folder structure, refined routing, and enhanced the overall user experience. Many technical issues appeared during this phase, including rendering problems, terminal errors, and routing conflicts. Instead of restarting repeatedly, I learned to debug systematically and understand the root cause of errors. This week taught me that problem-solving and debugging are essential development skills.",
+"date": "May 31, 2026"
+},
+{
+"id": "1718928000004",
+"title": "Completing the CMS Project",
+"content": "The final phase of the internship was focused on completing and polishing the Content Management System. I implemented Create, Read, Update, Delete, and Search functionality, making the application behave like a real CMS. To store blog data permanently, I integrated JSON-based file storage using Node.js File System operations. I also redesigned the interface, added an About page, improved navigation, and structured the application as a professional portfolio project. This project helped me understand backend routing, file handling, CRUD operations, and the importance of continuously refining both functionality and user experience.",
+"date": "Jun 20, 2026"
+}
+]

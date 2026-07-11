@@ -1,0 +1,13 @@
+<nav>
+    <a href="/" class="logo">Dev<span>CMS</span></a>
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <% if (isAdmin) { %>
+            <a href="/create" style="color: var(--accent);">Write Post</a>
+            <a href="/logout">Logout</a>
+        <% } else { %>
+            <a href="/login">Admin</a>
+        <% } %>
+    </div>
+</nav>

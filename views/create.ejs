@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Draft | SSV Workspace</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <%- include('./partials/navbar') %>
+
+    <main>
+        <div class="container">
+            <div class="glass-panel form-container">
+                <h2 class="section-title">Draft New Log</h2>
+                
+                <form action="/create" method="POST">
+                    <div class="form-group">
+                        <label for="title">Document Title</label>
+                        <input type="text" id="title" name="title" placeholder="e.g., Optimizing React Renders" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="snippet">Short Summary</label>
+                        <input type="text" id="snippet" name="snippet" placeholder="A brief overview of the article..." required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="content">Main Content</label>
+                        <textarea id="content" name="content" rows="10" placeholder="Start writing..." required></textarea>
+                    </div>
+                    
+                    <div style="display: flex; gap: 12px; margin-top: 32px;">
+                        <button type="submit" class="btn btn-primary">Publish Document</button>
+                        <a href="/" class="btn btn-secondary">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <%- include('./partials/footer') %>
+</body>
+</html>

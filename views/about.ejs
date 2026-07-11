@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Sai Shiva Vasam</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <%- include('./partials/navbar') %>
+
+    <main>
+        <div class="container" style="max-width: 800px;">
+            
+            <div style="text-align: center; margin-bottom: 48px;">
+                <h1 class="section-title" style="font-size: 2.5rem; margin-bottom: 12px;">About Me</h1>
+                <p style="color: var(--text-secondary); font-size: 1.1rem;">Building projects and gaining practical development experience.</p>
+            </div>
+
+            <div class="glass-panel" style="padding: 48px; margin-bottom: 32px; text-align: center;">
+                <div class="hero-badge" style="margin: 0 auto 24px; width: 56px; height: 56px; font-size: 1rem;">SSV</div>
+                <h2 style="font-size: 1.8rem; font-weight: 600; letter-spacing: -0.5px; margin-bottom: 16px;">Sai Shiva Vasam</h2>
+                <p style="color: var(--text-secondary); font-size: 1.1rem; max-width: 550px; margin: 0 auto; line-height: 1.8;">
+                    B.Tech CSE student passionate about Full Stack Development, problem solving, and building practical software projects.
+                </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 32px;">
+                
+                <div class="glass-panel" style="padding: 32px;">
+                    <div style="font-size: 1.5rem; margin-bottom: 16px;">🎓</div>
+                    <h3 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px;">Education</h3>
+                    <p style="font-weight: 500; font-size: 1.05rem;">B.Tech Computer Science Engineering</p>
+                </div>
+
+                <div class="glass-panel" style="padding: 32px;">
+                    <div style="font-size: 1.5rem; margin-bottom: 16px;">📍</div>
+                    <h3 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px;">Location</h3>
+                    <p style="font-weight: 500; font-size: 1.05rem;">Khammam, Telangana</p>
+                </div>
+
+                <div class="glass-panel" style="padding: 32px;">
+                    <div style="font-size: 1.5rem; margin-bottom: 16px;">🎯</div>
+                    <h3 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px;">Current Focus</h3>
+                    <p style="font-weight: 500; font-size: 1.05rem;">Building Full Stack Projects</p>
+                </div>
+
+                <div class="glass-panel" style="padding: 32px;">
+                    <div style="font-size: 1.5rem; margin-bottom: 16px;">💡</div>
+                    <h3 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px;">Interests</h3>
+                    <p style="font-weight: 500; font-size: 1.05rem;">AI Tools, Technology, & Creative Editing</p>
+                </div>
+
+            </div>
+
+            <div class="glass-panel" style="padding: 48px; display: flex; flex-direction: column; gap: 16px;">
+                <h2 style="font-size: 1.5rem; font-weight: 600; letter-spacing: -0.5px;">Internship Showcase Project</h2>
+                <p style="color: var(--text-secondary); line-height: 1.8;">
+                     This CMS project was built during my Full Stack Development Internship to apply the concepts I learned in a practical way. The application allows users to create, read, update, delete, and search blog content. It was developed using Node.js, Express, EJS, and JSON-based data storage, helping me gain hands-on experience with backend development, routing, and project structure.
+                </p>
+                <div style="margin-top: 16px;">
+                    <a href="/#logs" class="btn btn-secondary">View the CMS in action</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <%- include('./partials/footer') %>
+</body>
+</html>

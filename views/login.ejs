@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Access | SSV</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <%- include('./partials/navbar') %>
+
+    <main style="display: flex; align-items: center;">
+        <div class="container">
+            <div class="glass-panel form-container" style="max-width: 450px; text-align: center;">
+                <div class="hero-badge" style="margin: 0 auto 24px; width: 48px; height: 48px; font-size: 1rem;">🔒</div>
+                <h2 class="section-title">System Access</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 0.9rem;">Restricted to administrator.</p>
+                
+                <form action="/login" method="POST" style="text-align: left;">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Authenticate</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Internship | CMS</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <nav>
+        <a href="/" class="brand">
+            <span class="name"><%= authorName %></span>
+            <span class="subtitle">CMS Project</span>
+        </a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <% if (isAdmin) { %><a href="/create">Create Post</a><% } %>
+            <a href="/internship" class="active">My Internship</a>
+            <a href="/about">About Me</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="section-header">About My Internship</h2>
+        
+        <div class="cms-panel">
+            <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Role: Full Stack Development Intern</h3>
+            <p style="font-size: 1.1rem; color: #d4d4d8;">
+               Role: Full Stack Development Intern
+
+During my internship, I focused on understanding how a web application works end-to-end by building a Content Management System (CMS) from scratch instead of relying on tools like WordPress.
+
+I implemented a Node.js and Express backend to handle routing, form submissions, and basic request handling. Using EJS, I worked on rendering dynamic content on the frontend and structuring reusable templates.
+
+To understand application flow clearly, I built CRUD functionality using an in-memory data structure before integrating any database. This helped me learn how data moves between client, server, and views.
+
+On the frontend, I designed a dark-themed UI using pure CSS, focusing on layout, spacing, and responsiveness instead of depending on frameworks.
+
+This project represents my approach to learning by building and improving through hands-on practice rather than only studying theory.
+            </p>
+            <br>
+            <h3 style="margin-bottom: 1rem;">Core Responsibilities & Achievements:</h3>
+            <ul style="color: var(--text-secondary); margin-left: 1.5rem; line-height: 1.8;">
+                <li>Architected a Node.js and Express backend capable of handling RESTful routes.</li>
+                <li>Designed a dynamic templating engine workflow using EJS to inject server-side data into the client views.</li>
+                <li>Built an administrative dashboard with protected routes simulating authentication.</li>
+                <li>Created a premium, responsive UI from scratch utilizing advanced CSS methodologies, avoiding heavy frameworks to ensure deep comprehension of styling mechanics.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

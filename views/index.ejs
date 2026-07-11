@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Shiva Vasam | Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <%- include('./partials/navbar') %>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <div class="hero-badge">SSV</div>
+                <h1>SAI SHIVA VASAM</h1>
+                <h2>Full Stack Developer</h2>
+                <p>Building projects, solving problems, and documenting my journey.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Express.js</span>
+                    <span class="tech-tag">EJS</span>
+                    <span class="tech-tag">REST APIs</span>
+                </div>
+                <a href="#logs" class="btn btn-primary">View Internship Journey</a>
+            </section>
+
+            <section id="logs" style="margin-top: 60px;">
+                <h3 class="section-title">Internship Journey</h3>
+                
+                <div class="blog-grid">
+                    <% if (blogs.length > 0) { %>
+                        <% blogs.forEach(blog => { %>
+                            <div class="glass-panel blog-card">
+                               <div class="blog-meta">
+    <span>Internship Journal</span>
+    <span><%= blog.date %></span>
+</div>
+                                <h3><%= blog.title %></h3>
+                                <p><%= blog.snippet || blog.content.substring(0, 120) %>...</p>
+                                
+                                <div style="margin-top: 12px;">
+                                    <a href="/blog/<%= blog.id %>" class="btn btn-secondary" style="padding: 6px 16px; font-size: 0.85rem;">Read Article</a>
+                                </div>
+
+                                    <% if (isAdmin) { %>
+                                    <div class="admin-controls">
+                                        <a href="/edit/<%= blog.id %>" class="btn btn-secondary" style="padding: 4px 12px; font-size: 0.8rem;">Edit</a>
+                                        <form action="/delete/<%= blog.id %>" method="POST" style="display:inline;">
+                                            <button type="submit" class="btn btn-danger" onclick="return confirm('Delete this log?');">Delete</button>
+                                        </form>
+                                    </div>
+                                <% } %>
+                            </div>
+                        <% }) %>
+                    <% } else { %>
+                        <div class="glass-panel" style="padding: 40px; text-align: center; color: var(--text-secondary);">
+                            <p>No development logs found. Time to build something new.</p>
+                        </div>
+                    <% } %>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <%- include('./partials/footer') %>
+</body>
+</html>

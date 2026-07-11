@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= blog.title %> | SSV Logs</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <%- include('./partials/navbar') %>
+
+    <main>
+        <div class="container" style="max-width: 800px;">
+            <article>
+                <div class="article-header">
+                    <a href="/#logs" style="color: var(--text-tertiary); font-size: 0.9rem; margin-bottom: 20px; display: inline-block;">&larr; Back to Journey</a>
+                    <h1><%= blog.title %></h1>
+                    <p style="color: var(--text-tertiary);"><%= blog.date %></p>
+                </div>
+                
+                <div class="glass-panel article-content">
+                    <p style="white-space: pre-wrap;"><%= blog.content %></p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <%- include('./partials/footer') %>
+</body>
+</html>
